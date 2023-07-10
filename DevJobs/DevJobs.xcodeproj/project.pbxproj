@@ -23,7 +23,7 @@
 		64A99B882A5CC15C00773F45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64A99B8A2A5CC15D00773F45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64A99B8D2A5CC15D00773F45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		64A99B8F2A5CC15D00773F45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64A99B8F2A5CC15D00773F45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = DevJobs/Info.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,55 @@
 		64A99B802A5CC15C00773F45 /* DevJobs */ = {
 			isa = PBXGroup;
 			children = (
-				64A99B812A5CC15C00773F45 /* AppDelegate.swift */,
-				64A99B832A5CC15C00773F45 /* SceneDelegate.swift */,
-				64A99B852A5CC15C00773F45 /* ViewController.swift */,
-				64A99B872A5CC15C00773F45 /* Main.storyboard */,
-				64A99B8A2A5CC15D00773F45 /* Assets.xcassets */,
-				64A99B8C2A5CC15D00773F45 /* LaunchScreen.storyboard */,
+				64A99BA22A5CC6EB00773F45 /* Onboarding */,
+				64A99BA62A5CC76700773F45 /* App */,
 				64A99B8F2A5CC15D00773F45 /* Info.plist */,
 			);
 			path = DevJobs;
+			sourceTree = "<group>";
+		};
+		64A99BA22A5CC6EB00773F45 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				64A99BA52A5CC6FE00773F45 /* ViewModel */,
+				64A99BA42A5CC6F700773F45 /* ViewController */,
+				64A99BA32A5CC6F000773F45 /* View */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		64A99BA32A5CC6F000773F45 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				64A99B872A5CC15C00773F45 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		64A99BA42A5CC6F700773F45 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				64A99B852A5CC15C00773F45 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		64A99BA52A5CC6FE00773F45 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		64A99BA62A5CC76700773F45 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				64A99B812A5CC15C00773F45 /* AppDelegate.swift */,
+				64A99B832A5CC15C00773F45 /* SceneDelegate.swift */,
+				64A99B8A2A5CC15D00773F45 /* Assets.xcassets */,
+				64A99B8C2A5CC15D00773F45 /* LaunchScreen.storyboard */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +256,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = DevJobs/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -270,6 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = DevJobs/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
