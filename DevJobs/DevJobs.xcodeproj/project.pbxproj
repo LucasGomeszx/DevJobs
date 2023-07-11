@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		64A99B822A5CC15C00773F45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A99B812A5CC15C00773F45 /* AppDelegate.swift */; };
 		64A99B842A5CC15C00773F45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A99B832A5CC15C00773F45 /* SceneDelegate.swift */; };
-		64A99B862A5CC15C00773F45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A99B852A5CC15C00773F45 /* ViewController.swift */; };
+		64A99B862A5CC15C00773F45 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A99B852A5CC15C00773F45 /* OnboardingViewController.swift */; };
 		64A99B892A5CC15C00773F45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64A99B872A5CC15C00773F45 /* Main.storyboard */; };
 		64A99B8B2A5CC15D00773F45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64A99B8A2A5CC15D00773F45 /* Assets.xcassets */; };
 		64A99B8E2A5CC15D00773F45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64A99B8C2A5CC15D00773F45 /* LaunchScreen.storyboard */; };
+		64A99BB52A5CFC3400773F45 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A99BB32A5CFC3400773F45 /* OnboardingCollectionViewCell.swift */; };
+		64A99BB62A5CFC3400773F45 /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64A99BB42A5CFC3400773F45 /* OnboardingCollectionViewCell.xib */; };
+		64A99BB82A5DA1AD00773F45 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A99BB72A5DA1AD00773F45 /* OnboardingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		64A99B7E2A5CC15C00773F45 /* DevJobs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevJobs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A99B812A5CC15C00773F45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64A99B832A5CC15C00773F45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		64A99B852A5CC15C00773F45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		64A99B852A5CC15C00773F45 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		64A99B882A5CC15C00773F45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64A99B8A2A5CC15D00773F45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64A99B8D2A5CC15D00773F45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64A99B8F2A5CC15D00773F45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = DevJobs/Info.plist; sourceTree = SOURCE_ROOT; };
+		64A99BB32A5CFC3400773F45 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		64A99BB42A5CFC3400773F45 /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
+		64A99BB72A5DA1AD00773F45 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 		64A99BA22A5CC6EB00773F45 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				64A99BB22A5CFC1C00773F45 /* Cell */,
 				64A99BA52A5CC6FE00773F45 /* ViewModel */,
 				64A99BA42A5CC6F700773F45 /* ViewController */,
 				64A99BA32A5CC6F000773F45 /* View */,
@@ -84,7 +91,7 @@
 		64A99BA42A5CC6F700773F45 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				64A99B852A5CC15C00773F45 /* ViewController.swift */,
+				64A99B852A5CC15C00773F45 /* OnboardingViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -92,6 +99,7 @@
 		64A99BA52A5CC6FE00773F45 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				64A99BB72A5DA1AD00773F45 /* OnboardingViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -105,6 +113,15 @@
 				64A99B8C2A5CC15D00773F45 /* LaunchScreen.storyboard */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		64A99BB22A5CFC1C00773F45 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				64A99BB32A5CFC3400773F45 /* OnboardingCollectionViewCell.swift */,
+				64A99BB42A5CFC3400773F45 /* OnboardingCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +184,7 @@
 			files = (
 				64A99B8E2A5CC15D00773F45 /* LaunchScreen.storyboard in Resources */,
 				64A99B8B2A5CC15D00773F45 /* Assets.xcassets in Resources */,
+				64A99BB62A5CFC3400773F45 /* OnboardingCollectionViewCell.xib in Resources */,
 				64A99B892A5CC15C00773F45 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,9 +196,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64A99B862A5CC15C00773F45 /* ViewController.swift in Sources */,
+				64A99BB82A5DA1AD00773F45 /* OnboardingViewModel.swift in Sources */,
+				64A99B862A5CC15C00773F45 /* OnboardingViewController.swift in Sources */,
 				64A99B822A5CC15C00773F45 /* AppDelegate.swift in Sources */,
 				64A99B842A5CC15C00773F45 /* SceneDelegate.swift in Sources */,
+				64A99BB52A5CFC3400773F45 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
