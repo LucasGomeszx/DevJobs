@@ -23,6 +23,9 @@ class OnboardingViewController: UIViewController {
     
     private func setupView() {
         navigationController?.navigationBar.isHidden = true
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(naviWelcomeScreen))
+        arrowImage.addGestureRecognizer(gesture)
+        arrowImage.isUserInteractionEnabled = true
         arrowImage.image = UIImage(systemName: "arrow.right")
         arrowImage.tintColor = .black
         arrowImage.isHidden = true
@@ -43,6 +46,11 @@ class OnboardingViewController: UIViewController {
             layout.estimatedItemSize = .zero
         }
         collectionView.register(OnboardingCollectionViewCell.nib(), forCellWithReuseIdentifier: OnboardingCollectionViewCell.identifier)
+    }
+    
+    @objc private func naviWelcomeScreen() {
+        let vc: WelcomeViewController? = UIStoryboard(name: "WelcomeViewController", bundle: nil).instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController
+        navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
     }
 
 }
